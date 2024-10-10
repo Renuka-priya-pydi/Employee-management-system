@@ -80,13 +80,15 @@ Employee records consist of:
  ### Entering details
  ![4](https://github.com/user-attachments/assets/790d3fac-556e-4415-9d95-dda09d0c3fe6)
  ### Entering details
-![5](https://github.com/user-attachments/assets/2424e878-4ddc-4718-892e-6a303abf6403)
+![5](https://github.com/user-attachments/assets/aa36ad11-6662-4940-bc45-0d4e58a843b8)
 ### Employee list
 ![6](https://github.com/user-attachments/assets/8bc23efc-b8e6-4dbf-a0f0-ef10ca102355)
 ### View Employee
 ![7](https://github.com/user-attachments/assets/40f6c688-1f9b-4743-b116-4870e596b46a)
 ### Edit Employee details
 ![8](https://github.com/user-attachments/assets/8511c134-ea60-49f7-8d05-53bd2f843c9d)
+### Update Employee Details
+![14](https://github.com/user-attachments/assets/f4b02e41-a730-4a8f-b095-9756d7b6143c)
 ### Delete Employee
  ![13](https://github.com/user-attachments/assets/9d6f8d05-9488-4991-b501-c91476c64835)
 ### Employee login
