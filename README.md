@@ -87,6 +87,8 @@ Employee records consist of:
 ![7](https://github.com/user-attachments/assets/40f6c688-1f9b-4743-b116-4870e596b46a)
 ### Edit Employee details
 ![8](https://github.com/user-attachments/assets/8511c134-ea60-49f7-8d05-53bd2f843c9d)
+### Delete Employee
+ ![13](https://github.com/user-attachments/assets/9d6f8d05-9488-4991-b501-c91476c64835)
 ### Employee login
 ![9](https://github.com/user-attachments/assets/e9ae4a8d-3924-4e23-9fa5-c1ab2a6ecfb5)
 ### Employee Dashboard
@@ -95,8 +97,7 @@ Employee records consist of:
 ![11](https://github.com/user-attachments/assets/6795c72e-1dd9-4116-bdca-7fed53f22773)
 ### View Payslip
 ![12](https://github.com/user-attachments/assets/54017daf-435c-4450-8c2d-0a8c7b649aef)
-### Payslips
- ![13](https://github.com/user-attachments/assets/9d6f8d05-9488-4991-b501-c91476c64835)
+
 
 
 
