@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #003366, #0066cc);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 1200px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+            color: #fff;
+        }
+
+        th {
+            background-color: #004080;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        a {
+            color: #66ccff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #003366;
+        }
+
+        .actions {
+            text-align: center;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 6px 12px;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.1s;
+        }
+
+        .action-btn.delete {
+            background-color: #e74c3c;
+        }
+
+        .action-btn.delete:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .action-btn.edit {
+            background-color: #2ecc71;
+        }
+
+        .action-btn.edit:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+        }
+
+        .action-btn.view {
+            background-color: #3498db; /* Blue color for View button */
+        }
+
+        .action-btn.view:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        .no-users {
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            margin: 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #0066cc;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="dashboard">
+        <nav>
+            <a class="btn" href="add-employee.html" role="button">Add Employee</a>
+            <a class="btn" href="/logout" role="button">Logout</a>
+        </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employment Code</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Manager</th>
+                    <th>Current Project</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <th:block th:if="${#lists.isEmpty(ulist)}">
+                    <tr>
+                        <td colspan="6" class="no-users">No user found</td>
+                    </tr>
+                </th:block>
+                <th:block th:unless="${#lists.isEmpty(ulist)}">
+                    <tr th:each="u : ${ulist}">
+                        <td th:text="${u.employmentcode}"></td>
+                        <td th:text="${u.name}"></td>
+                        <td th:text="${u.email}"></td>
+                        <td th:text="${u.manager}"></td>
+                        <td th:text="${u.currentproject}"></td>
+                        <td class="actions">
+                            <a class="action-btn view" href="view-employee.html">View</a>
+                            <a class="action-btn edit" href="edit-employee.html">Edit</a>
+                            <a class="action-btn delete" th:href="@{/delete/{employmentcode}(employmentcode=${u.employmentcode})}">Delete</a>
+                        </td>
+                    </tr>
+                </th:block>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

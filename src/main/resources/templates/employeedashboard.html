@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+    <style>
+        body {
+            background: #eef2f5;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .dashboard {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        .detail {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .detail label {
+            width: 200px;
+            font-weight: bold;
+        }
+
+        .payslip-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #28a745;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .payslip-btn:hover {
+            background: #218838;
+        }
+
+        @media (max-width: 600px) {
+            .detail {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+
+            .detail label {
+                width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h2>Welcome, Employee Name</h2>
+
+    <!-- Personal Details Section -->
+    <div class="section">
+        <h3>Personal Details</h3>
+        <div class="detail">
+            <label>Full Name:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Date of Birth:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Gender:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Personal Email:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Mobile:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Emergency Contact:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Current Address:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Permanent Address:</label>
+            <label></label>
+        </div>
+    </div>
+
+    <!-- Professional Details Section -->
+    <div class="section">
+        <h3>Professional Details</h3>
+        <div class="detail">
+            <label>Employment Code:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Company Email:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Date of Joining:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Office Phone:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Reporting Manager:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>HR Name:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Employment History:</label>
+            <label></label>
+        </div>
+    </div>
+
+    <!-- Project Details Section -->
+    <div class="section">
+        <h3>Project Details</h3>
+        <div class="detail">
+            <label>Current Project:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Start Date:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>End Date:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Project Reporting Manager:</label>
+            <label></label>
+        </div>
+    </div>
+
+    <!-- Finance Details Section -->
+    <div class="section">
+        <h3>Finance Details</h3>
+        <div class="detail">
+            <label>PAN Card:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Aadhar Card:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Bank Name:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>Branch:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>IFSC Code:</label>
+            <label></label>
+        </div>
+        <div class="detail">
+            <label>CTC Breakup:</label>
+            <label></label>
+        </div>
+
+        <!-- Payslip Download -->
+        <a class="payslip-btn" download>Download Last 6 Payslips</a>
+    </div>
+</div>
+
+</body>
+</html>

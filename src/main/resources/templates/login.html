@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Panel</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 320px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        fieldset {
+            border: none;
+        }
+        legend {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2a5298;
+            margin: 10px 0;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            width: 100px;
+            padding: 12px;
+            background: #2a5298;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.1s;
+            margin: 40px auto 0;
+            display: block;
+        }
+        input[type="submit"]:hover {
+            background: #1e3c72;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label>Username</label>
+                <input type="text" id="username" name="username" required/>
+            </p>
+            <p>
+                <label>Password</label>
+                <input type="password" id="password" name="password" required/>
+            </p>
+            <p>
+                <input type="submit" action="/login" value="Login">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
