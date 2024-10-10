@@ -1,3 +1,4 @@
+
 # Employee-management-system
 ## Description
 The Employee Management System is a web application that allows employees to manage their personal and professional details, view project history, and download finance-related information. The system also provides an admin dashboard for employee management, including the ability to create, update, or delete employee records.
@@ -68,3 +69,40 @@ Employee records consist of:
 ### Employee Actions:
 - **View Personal and Professional Details**: Employees can view their information but cannot modify it.
 - **Download Payslips**: Employees can download their payslips in PDF format for the last 6 months.
+
+- Screens
+ ## login Page
+  ![1](https://github.com/user-attachments/assets/3fa7208a-c696-4294-a260-ac5ca5cd9d91)
+ ### Admin dashboard
+ ![2](https://github.com/user-attachments/assets/b9a847aa-04f8-4949-813f-356aaa65a1b9)
+ ### Add Employee
+ ![3](https://github.com/user-attachments/assets/ff934ae7-95f7-4da5-ad45-1d194b9e21b1)
+ ### Entering details
+ ![4](https://github.com/user-attachments/assets/790d3fac-556e-4415-9d95-dda09d0c3fe6)
+ ### Entering details
+![5](https://github.com/user-attachments/assets/2424e878-4ddc-4718-892e-6a303abf6403)
+### Employee list
+![6](https://github.com/user-attachments/assets/8bc23efc-b8e6-4dbf-a0f0-ef10ca102355)
+### View Employee
+![7](https://github.com/user-attachments/assets/40f6c688-1f9b-4743-b116-4870e596b46a)
+### Edit Employee details
+![8](https://github.com/user-attachments/assets/8511c134-ea60-49f7-8d05-53bd2f843c9d)
+### Employee login
+![9](https://github.com/user-attachments/assets/e9ae4a8d-3924-4e23-9fa5-c1ab2a6ecfb5)
+### Employee Dashboard
+![10](https://github.com/user-attachments/assets/7b5049e4-b467-47fc-8615-a7a6decb8229)
+### Download Payslips
+![11](https://github.com/user-attachments/assets/6795c72e-1dd9-4116-bdca-7fed53f22773)
+### View Payslip
+![12](https://github.com/user-attachments/assets/54017daf-435c-4450-8c2d-0a8c7b649aef)
+### Payslips
+ ![13](https://github.com/user-attachments/assets/9d6f8d05-9488-4991-b501-c91476c64835)
+
+
+
+
+
+
+
+
+
