@@ -5,10 +5,13 @@ The Employee Management System is a web application that allows employees to man
 
 ### Key Features:
 - **Register & Role-Based Login**: Employees can log in using their company email or employment code, and access dashboards based on their roles (Admin/Employee).
-- **Admin Dashboard**: Admins can view, add, update, or delete employee records and manage employee details.
+- **Admin Dashboard**:
+- Admins can view, add, update, or delete employee records and manage employee details.
 - **Employee Dashboard**: Employees can view their own details, including personal information, project history, and finance data.
-- **Project Details**: Manage project history with details like project code, client name, and reporting manager.
-- **Finance Section**: Employees can view bank details, PAN, Aadhar, and download the last 6 months' payslips.
+- **Project Details**:
+-  Manage project history with details like project code, client name, and reporting manager.
+- **Finance Section**:
+- Employees can view bank details, PAN, Aadhar, and download the last 6 months' payslips.
 ## Modules
 
 ### 1. Register and Role-based Login:
@@ -16,8 +19,10 @@ The Employee Management System is a web application that allows employees to man
 - Role-based access ensures Admins and Employees have different dashboards.
 
 ### 2. Admin Dashboard:
-- **Create, Update, Delete Employees**: Admin can add or manage employee details including personal, professional, project, and finance details.
-- **View Employee List**: The list shows basic employee information (Employment Code, Name, Email, Manager, Current Project) with options to view, edit, or delete.
+- **Create, Update, Delete Employees**:
+-  Admin can add or manage employee details including personal, professional, project, and finance details.
+- **View Employee List**:
+- The list shows basic employee information (Employment Code, Name, Email, Manager, Current Project) with options to view, edit, or delete.
 
 ### 3. Employee Dashboard:
 - Employees can view their own details (personal, professional, and finance) and project history.
